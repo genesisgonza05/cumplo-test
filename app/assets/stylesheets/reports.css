@@ -2,10 +2,11 @@
   position: absolute;
   z-index: 9999;
   top: -82px;
-  width: 76%;
+  width: 85%;
   text-align: center;
   background: rgba(255, 255, 255, 0.68);
   height: 100%;
+  left: 8%;
 }
 
 #report-section {
