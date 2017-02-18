@@ -1,0 +1,26 @@
+.center {
+  text-align: center;
+}
+
+.align-right { 
+  float: right;
+}
+
+.without-padding-left {
+  padding-left: 0 !important;
+}
+
+.without-padding-right {
+  padding-right: 0 !important;
+}
+
+.input-group.date input {
+  height: 35px;
+}
+
+.text {
+  padding: 22px 0;
+  color: #a09f9f;
+}
+
+

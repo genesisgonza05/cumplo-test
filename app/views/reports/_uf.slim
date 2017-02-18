@@ -1,0 +1,10 @@
+h3 UF Report
+
+p.sub-title Data:
+p - Average Value: #{@average_uf} CLP
+p - Max. Value: #{@minmax_uf.last} CLP
+p - Min. Value: #{@minmax_uf.first} CLP
+
+hr.separator-vertical
+
+= render partial: "table", locals: { object_report: @ufs_report, type_report: "UF" }

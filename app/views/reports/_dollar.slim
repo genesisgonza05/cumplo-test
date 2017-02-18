@@ -1,0 +1,10 @@
+h3 Dollar Report
+
+p.sub-title Data:
+p - Average Value: #{@average_dollar} CLP
+p - Max. Value: #{@minmax_dollar.last} CLP
+p - Min. Value: #{@minmax_dollar.first} CLP
+
+hr.separator-vertical
+
+= render partial: "table", locals: { object_report: @dollars_report, type_report: "Dollar" }

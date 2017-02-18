@@ -1,0 +1,27 @@
+.box-loading.hidden
+  = image_tag "loading.gif"
+
+#report-section
+  = link_to('Logout', destroy_user_session_path, method: :delete, class: "align-right")      
+
+  h1 SBIF REPORT
+
+  p.text Choose a range of dates to make your report
+
+  = form_tag new_report_path, method: :get do
+    .col-md-5.without-padding-left
+      .form-group
+        #datepicker-start-date.input-group.date
+          = text_field_tag 'start_date', nil, class: 'form-control'
+          span.input-group-addon
+            span.glyphicon.glyphicon-calendar
+
+    .col-md-5
+      .form-group
+        #datepicker-end-date.input-group.date
+          = text_field_tag 'end_date', nil, class: 'form-control'
+          span.input-group-addon
+            span.glyphicon.glyphicon-calendar
+
+    .col-md-2.form-group.without-padding-right
+      button#get-data.btn.btn-primary type = "submit" Get Data

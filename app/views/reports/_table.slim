@@ -1,0 +1,18 @@
+table.table.table-striped.table-responsive
+  thead
+    tr
+      th Date (YYYY-MM-DD)
+      th Value (CLP)
+  tbody
+    - if object_report.blank?
+      tr
+        td colspan="4" No Report
+    - object_report.to_a.each do |report|
+      tr
+        td=report.date
+        td=report.value
+
+    = hidden_field_tag "resport_values_#{type_report.downcase}", object_report.to_json
+
+
+canvas id="myChart#{type_report}" height="400" width="400" 
