@@ -34,7 +34,7 @@ class ReportsController < ApplicationController
   end
 
   def sbif_gateway
-    @sbif = ManagerSBIF.new    
+    @sbif = ManagerSBIF.new  
   end
 
 end
