@@ -11,15 +11,6 @@ class ReportsController < ApplicationController
       @dollars_report = @sbif.dollars_report
       @ufs_report = @sbif.uf_report
       data_obtained
-
-      puts @dollars_report
-      puts @ufs_report
-      puts @average_dollar.class
-      puts @minmax_uf
-      puts @minmax_uf.class
-
-
-
     else
       flash[:danger] = @sbif.message_errors
     end

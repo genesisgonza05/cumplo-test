@@ -1,7 +1,7 @@
 #login.col-xs-12.col-xs-offset-0.col-sm-10.col-sm-offset-1.col-md-5.col-md-offset-4.col-lg-4.col-lg-offset-4
   .title Cumplo Test
 
-  = form_for resource, as: resource_name, url: new_user_session_path(resource_name), remote: true, html: {class: 'form-horizontal'} do |f|
+  = form_for resource, as: resource_name, url: new_user_session_path(resource_name), html: {class: 'form-horizontal'} do |f|
     .field.form-group
       = f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email", required: true
 

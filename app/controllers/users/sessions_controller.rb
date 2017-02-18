@@ -4,7 +4,8 @@ class Users::SessionsController < Devise::SessionsController
   def create
     if valid_session?
       set_flash_message :success, :signed_in
-      sign_in_and_redirect(resource_name, @resource_user)
+      sign_in(resource_name, @resource_user)
+      redirect_to root_path
     else
       error_session
     end
